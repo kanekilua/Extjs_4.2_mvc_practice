@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EtxJS</title>
+    <link rel="stylesheet" href="extjs/resources/css/ext-all.css" type="text/css">
+    <script type="text/javascript" src="extjs/ext-all.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+</head>
+<body>
+    <!--<div id="grid"></div>-->
+</body>
+    <!--<script type="text/javascript">
+        Ext.onReady(function() {
+      //定義表頭欄位
+      var columns=[Ext.create("Ext.grid.RowNumberer",{text:"編號",width:50}),
+                   {header:"Active Site",dataIndex:"site_name"}
+                   ];
+      //轉成 Store 物件
+      var store=Ext.create("Ext.data.Store", {
+          proxy:{
+            type:"ajax",
+            url:"http://localhost:9090/webapi/group",
+            reader:{
+              type:"json"
+              }
+            },
+          fields:[
+            {name:"site_name"}
+            ]
+          });
+          store.load();
+      //建立 GridPanel 
+      var grid=Ext.create("Ext.grid.Panel",{
+        title:"protla_portlet",
+        columns:columns,
+        store:store,
+        renderTo:"grid",
+        width:450,
+        forceFit:true,
+        });
+        //傳送起始參數
+      }); //end of onReady
+    </script>
+</html>-->
